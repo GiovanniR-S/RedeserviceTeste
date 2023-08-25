@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\giova\\OneDrive\\Documentos\\Estudo\\Testes\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\giova\\OneDrive\\Documentos\\Estudo\\Testes\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\giova\\OneDrive\\Documentos\\Estudo\\Testes\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste.csproj",
+        "projectName": "GiovanniTeste",
+        "projectPath": "C:\\Users\\giova\\OneDrive\\Documentos\\Estudo\\Testes\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste.csproj",
+        "packagesPath": "C:\\Users\\giova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\giova\\OneDrive\\Documentos\\Estudo\\Testes\\GiovanniTeste\\GiovanniTeste\\GiovanniTeste\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\giova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.10.*, )"
+            },
+            "System.ServiceModel.Federation": {
+              "target": "Package",
+              "version": "[4.10.*, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.10.*, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.10.*, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.10.*, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

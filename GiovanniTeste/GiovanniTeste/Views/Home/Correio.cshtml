@@ -1,0 +1,77 @@
+﻿@model ServiceReference1.consultaCEPResponse
+
+@{
+    ViewData["Title"] = "Correio";
+}
+
+
+
+<div class="container-fluid align-content-center">
+    <div class="col-10 text-center">
+        <h1 class="display-4 text-decoration-underline my-5">Correio</h1>
+    </div>
+    <div class="col-10">
+        <form asp-action="ConsutaCep" asp-antiforgery="true" method="post" class="text-center mt-3">
+            <div class="form-group">
+                <label>Digite Cep.</label><br />
+                <input class="mt-1" name="cep" type="text" />
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Consultar" class="btn btn-primary shadow" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <h4>Logradouro</h4>
+    <hr />
+    @if(Model != null)
+    {
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.@return.bairro)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.@return.bairro)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.@return.cep)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.@return.cep)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.@return.cidade)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.@return.cidade)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.@return.complemento2)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.@return.complemento2)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayName("Endereço")
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.@return.end)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.@return.uf)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.@return.uf)
+            </dd>
+        </dl>
+    } else
+    {
+        if(@ViewBag.ErroCorreio != null)
+        {
+            <span class="text-dark">@ViewBag.ErroCorreio</span>
+        }
+    }
+</div>

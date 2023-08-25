@@ -1,0 +1,44 @@
+﻿@model IEnumerable<GiovanniTeste.Models.Entidades.ClsTeste>
+
+@{
+    ViewData["Title"] = "Lista Itens";
+}
+
+<div class="container">
+    <div class="col-10">
+        <h1 class="display-4 text-decoration-underline text-center my-5">ListaItens</h1>
+    </div>
+
+    <div class="col-10">
+        @if(Model != null)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Codigo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Descricao)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Codigo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descricao)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        }
+    </div>
+</div>

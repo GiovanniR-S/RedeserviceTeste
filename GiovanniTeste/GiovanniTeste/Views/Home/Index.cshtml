@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="text-center">
+    <div class="container-fluid align-content-center">
+        <div class="col-10">
+            <h1 class="display-4 text-decoration-underline my-5">Giovanni Roberts Silva</h1>
+        </div>
+        <div class="col-10">
+            <form asp-action="FormularioNumeros" asp-antiforgery="true" method="post" class="text-center mt-3">
+                <div class="form-group">
+                    <label>Digite um número.</label><br />
+                    <input class="mt-1" name="numero" type="text" />
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Inserir números" class="btn btn-primary shadow" />
+                </div>
+            </form>
+        </div>
+
+        <div class="col-10">
+            <form asp-action="GravarNumerosTxt" asp-antiforgery="true" method="post" class="text-center">
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Gravar arquivo txt números" class="btn btn-primary shadow" />
+                </div>
+            </form>
+        </div>
+
+        <div class="col-10 mt-5 border border-dark py-1">
+            @if(@ViewBag.Numeros != null)
+            {
+                int i = 0;
+                @foreach(var item in ViewBag.Numeros)
+                {
+                    <span>@ViewBag.Numeros[i]</span>
+
+                    <br />
+                    i++;
+                }
+            }
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Imagem";
+
+}
+
+
+
+<div class="container text-center align-content-center">
+    <div class="col-10">
+        <h1 class="display-4 text-decoration-underline mt-5 mb-3">Imagens</h1>
+        <p class="align-content-center text-dark mt-3">
+            Nessa tela você faz o download da imagem grava em uma pasta Arquivos dentro da solução.
+            Ao mesmo tempo você exibe a imagem que foi feita download e também mostra em string base64.
+        </p>
+    </div>
+    <div class="col-10">
+        <form asp-action="BaixarImagemUrl" asp-antiforgery="true" method="post" class="text-center">
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Baixar Imagem" class="btn btn-primary shadow" />
+            </div>
+        </form>
+        <hr />
+
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-sm text-break border border-dark p-1">@ViewBag.Image</div>
+            </div>
+        </div>
+
+        <hr />
+        <form asp-action="GetImagem" asp-antiforgery="true" method="get" class="text-center">
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Exibir Imagem" class="btn btn-primary shadow" />
+            </div>
+            <hr />
+            <img src="@ViewBag.Image">
+        </form>
+    </div>
+</div>
